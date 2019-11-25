@@ -1,4 +1,19 @@
 @import "config";
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto+Mono&display=swap);
+
+$gutter-half: $gutter * 0.5;
+$gutter-twice: $gutter * 2;
+$gutter-thrice: $gutter * 3;
+$font-main: Lora, serif;
+$font-title: Roboto Mono, monospace;
+$black-color: #000;
+$dark-grey-color: #999;
+$grey-color: #aaa;
+$light-grey-color: #ccc;
+$blue-color: #2d2;
+$dark-blue-color: #1a1;
+$yellow-color: #fcffd2;
+$pink-color: #cc9694;
 
 * {
   padding: 0;
