@@ -14,6 +14,10 @@ $blue-color: #2d2;
 $dark-blue-color: #1a1;
 $yellow-color: #fcffd2;
 $pink-color: #cc9694;
+$small-font: 16px;
+$medium-font: 24px;
+$large-font: 32px;
+$huge-font: 48px;
 
 * {
   padding: 0;
@@ -39,4 +43,26 @@ img { /* stylelint-disable-line */
   max-width: 100%;
 }
 
+.fyrirlestrar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box {
+
+  margin: $gutter;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.flokkur{
+  background-color: $yellow-color;
+}
+.flokkur-empty{
+  background-color: $grey-color;
+}
+.tegund{
+  background-color: $grey-color;
+}
 // TODO import
