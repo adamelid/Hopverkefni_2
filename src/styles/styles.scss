@@ -58,11 +58,26 @@ img { /* stylelint-disable-line */
 }
 .flokkur{
   background-color: $yellow-color;
+  height: 300px;
 }
 .flokkur-empty{
   background-color: $grey-color;
+  height: 300px;
 }
 .tegund{
   background-color: $grey-color;
+  height: 150px;
+}
+button{
+  background-color: $grey-color;
+  border-radius: 15px;
+  color: $black-color;
+  font-family: $font-main;
+  font-size: $medium-font;
+  font-weight: bold;
+  padding: $gutter-half $gutter;
+}
+button:hover{
+  background-color: $pink-color;
 }
 // TODO import
