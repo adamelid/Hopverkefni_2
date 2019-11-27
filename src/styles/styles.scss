@@ -50,8 +50,8 @@ img { /* stylelint-disable-line */
 }
 .box {
 
-  margin: $gutter;
-  width: 300px;
+  margin: $gutter-half;
+  width: 400px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -59,14 +59,21 @@ img { /* stylelint-disable-line */
 .flokkur{
   background-color: $yellow-color;
   height: 300px;
+  padding: 10px;
 }
 .flokkur-empty{
   background-color: $grey-color;
   height: 300px;
+  padding: 10px;
 }
 .tegund{
   background-color: $grey-color;
   height: 150px;
+  padding: 10px;
+}
+.buttons{
+  text-align: center;
+  margin-bottom: 20px;
 }
 button{
   background-color: $grey-color;
@@ -80,4 +87,12 @@ button{
 button:hover{
   background-color: $pink-color;
 }
+header{
+  margin-bottom: $gutter * 2;
+  background-color: $grey-color;
+  height: 200px;
+  text-align: center;
+  padding-top: 65px;
+}
+
 // TODO import
