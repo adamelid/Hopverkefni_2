@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Hópverkefni 2</title>
   <link rel="stylesheet" href="/dist/styles.css">
+  <script src="/src/index.js"></script>
+  <script src="/src/buttons.js"></script>
 </head>
 <body>
   <header>
@@ -14,12 +16,13 @@
   <main>
 
     <div class="buttons">
-      <button> HTML </button>
-      <button> CSS </button>
-      <button>JavaScript</button>
+      <button class="btn active" onclick="filterSelection('box-html')"> HTML </button>
+      <button class="btn" onclick="filterSelection('box-css')"> CSS </button>
+      <button class="btn" onclick="filterSelection('box-javascript')">JavaScript</button>
     </div>
 
     <div class="fyrirlestrar">
+      <a href="">
       <div class="box box-html">
           <div class="flokkur">
             <h1>FYRIRLESTUR 1.1 - KYNNING</h1>
@@ -31,6 +34,7 @@
             <h2>Sagan</h2>
           </div>
         </div>
+      </a>
 
       <div class="box box-html">
           <div class="flokkur-empty">

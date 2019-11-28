@@ -49,9 +49,10 @@ img { /* stylelint-disable-line */
   justify-content: space-evenly;
   padding-left: 120px;
   padding-right: 120px;
+  overflow: hidden;
 }
 .box {
-
+  display: none;
   margin: $gutter-half;
   width: 400px;
   height: 300px;
@@ -97,4 +98,6 @@ header{
   padding-top: 65px;
 }
 
-// TODO import
+.show {
+  display: block;
+}
