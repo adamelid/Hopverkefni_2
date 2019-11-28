@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Hópverkefni 2</title>
   <link rel="stylesheet" href="/dist/styles.css">
+  <script src="/src/index.js"></script>
+  <script src="/src/buttons.js"></script>
 </head>
 <body>
   <header>
@@ -14,12 +16,13 @@
   <main>
 
     <div class="buttons">
-      <button> HTML </button>
-      <button> CSS </button>
-      <button>JavaScript</button>
+      <button class="btn" onclick="filterSelection('box-html')"> HTML </button>
+      <button class="btn" onclick="filterSelection('box-css')"> CSS </button>
+      <button class="btn" onclick="filterSelection('box-javascript')">JavaScript</button>
     </div>
 
     <div class="fyrirlestrar">
+      <a href="fyrirlestur.html?slug=html-sagan">
       <div class="box box-html">
           <div class="flokkur">
             <h1>FYRIRLESTUR 1.1 - KYNNING</h1>
@@ -30,18 +33,18 @@
             <p>HTML</p>
             <h2>Sagan</h2>
           </div>
-        </div>
+        </div> </a>
 
-      <div class="box box-html">
+      <a href="fyrirlestur.html?slug=html-element"><div class="box box-html">
           <div class="flokkur-empty">
           </div>
           <div class="tegund">
             <p>HTML</p>
             <h2>Element</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-html">
+      <a href="fyrirlestur.html?slug=html-a11y"><div class="box box-html">
           <div class="flokkur">
             <h1>FYRIRLESTUR 2.3 - AÐGENGI OG SEO</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -51,9 +54,9 @@
             <p>HTML</p>
             <h2>Aðgengi</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-css">
+      <a href="fyrirlestur.html?slug=css-syntax"><div class="box box-css">
           <div class="flokkur">
             <h1>FYRIRLESTUR 3.1 - CSS #1 - MÁLFRÆÐI</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -63,9 +66,9 @@
             <p>CSS</p>
             <h2>Málfræði</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-css">
+      <a href="fyrirlestur.html?slug=css-box"><div class="box box-css">
           <div class="flokkur">
             <h1>FYRIRLESTUR 3.3 - CSS #2 - BOX MODEL</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -75,9 +78,9 @@
             <p>CSS</p>
             <h2>Box model</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-css">
+      <a href="fyrirlestur.html?slug=css-flexbox"><div class="box box-css">
           <div class="flokkur">
             <h1>FYRIRLESTUR 5.1 - FLEXBOX OG VIÐMINURREGLUR</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -87,9 +90,9 @@
             <p>CSS</p>
             <h2>Flexbox</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-css">
+      <a href="fyrirlestur.html?slug=css-responsive"><div class="box box-css">
           <div class="flokkur">
             <h1>FYRIRLESTUR 6.1 - SKALANLEG VEFHÖNNUN</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -99,18 +102,18 @@
             <p>CSS</p>
             <h2>Skalanleg vefhönnun</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-javascript">
+      <a href="fyrirlestur.html?slug=js-basic"><div class="box box-javascript">
           <div class="flokkur-empty">
           </div>
           <div class="tegund">
             <p>JAVASCRIPT</p>
             <h2>Gildi, týpur og virkjar</h2>
           </div>
-      </div>
+      </div></a>
 
-      <div class="box box-javascript">
+      <a href="fyrirlestur.html?slug=js-programs"><div class="box box-javascript">
           <div class="flokkur">
             <h1>FYRIRLESTUR 8.2 - JAVASCRIPT FORRIT</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -120,9 +123,9 @@
             <p>JAVASCRIPT</p>
             <h2>Forrit</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-javascript">
+      <a href="fyrirlestur.html?slug=js-functions"><div class="box box-javascript">
           <div class="flokkur">
             <h1>FYRIRLESTUR 8.3 - JAVASCRIPT FÖLL</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -132,9 +135,9 @@
             <p>JAVASCRIPT</p>
             <h2>Föll</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-javascript">
+      <a href="fyrirlestur.html?slug=js-array"><div class="box box-javascript">
           <div class="flokkur">
             <h1>FYRIRLESTUR 9.1 - JAVASCRIPT ARRAY OG OBJECTS</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -144,18 +147,18 @@
             <p>JAVASCRIPT</p>
             <h2>Array & objects</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-javascript">
+      <a href="fyrirlestur.html?slug=js-dom"><div class="box box-javascript">
           <div class="flokkur-empty">
           </div>
           <div class="tegund">
             <p>JAVASCRIPT</p>
             <h2>Dom & vafrinn</h2>
           </div>
-        </div>
+        </div></a>
 
-      <div class="box box-javascript">
+      <a href="fyrirlestur.html?slug=js-example"><div class="box box-javascript">
           <div class="flokkur">
             <h1>FYRIRLESTUR 11.4 - DÆMI</h1>
             <h2>VEFFORITUN 1 - TÖL107G</h2>
@@ -165,7 +168,7 @@
             <p>JAVASCRIPT</p>
             <h2>Dæmi</h2>
           </div>
-        </div>
+        </div></a>
 
     </div>
   </main>
