@@ -52,7 +52,6 @@ img { /* stylelint-disable-line */
   overflow: hidden;
 }
 .box {
-  display: none;
   margin: $gutter-half;
   width: 400px;
   height: 300px;
@@ -64,11 +63,20 @@ img { /* stylelint-disable-line */
   height: 300px;
   padding: 10px;
 }
+.tegund:hover{
+  background-color: $dark-grey-color;
+}
+.flokkur:hover + .tegund {background-color: $dark-grey-color;}
+
 .flokkur-empty{
   background-color: $grey-color;
   height: 300px;
   padding: 10px;
 }
+.flokkur-empty:hover{
+  background-color: $dark-grey-color;
+}
+.flokkur-empty:hover + .tegund{background-color: $dark-grey-color;}
 .tegund{
   background-color: $grey-color;
   height: 150px;
@@ -92,12 +100,17 @@ button:hover{
 }
 header{
   margin-bottom: $gutter * 2;
-  background-color: $grey-color;
+  background-image: url("../img/header.jpg");
   height: 200px;
   text-align: center;
   padding-top: 65px;
 }
-.button.active {
+button:active {
   background-color: $pink-color;
 }
+a {
+  text-decoration: none;
+  color: $black-color;
+}
+
 // TODO import
