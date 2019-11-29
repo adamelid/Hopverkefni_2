@@ -77,9 +77,11 @@ function appendData(jsonData) {
             mainContainer.appendChild(list);
           }
           if (jsonData.lectures[nr].content[stak].type == "code"){
-            var paragraph = document.createElement("p");
-            paragraph.innerHTML = jsonData.lectures[nr].content[stak].data;
-            mainContainer.appendChild(paragraph);
+            var pre = document.createElement("pre");
+            var code = document.createElement("code");
+            code.innerHTML = jsonData.lectures[nr].content[stak].data;
+            pre.appendChild(code);
+            mainContainer.appendChild(pre);
           }
         }
         mainContainer.appendChild(document.createElement("br"));
