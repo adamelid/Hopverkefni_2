@@ -50,7 +50,6 @@ img { /* stylelint-disable-line */
   padding-left: 120px;
   padding-right: 120px;
   overflow: hidden;
-  padding-bottom: 40px;
 }
 .box {
   margin: $gutter-half;
@@ -102,6 +101,8 @@ button:hover{
 header{
   margin-bottom: $gutter * 2;
   background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
   height: 200px;
   text-align: center;
   padding-top: 65px;
