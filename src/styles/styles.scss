@@ -55,7 +55,7 @@ img { /* stylelint-disable-line */
   margin: $gutter-half;
   width: 400px;
   height: 300px;
-  display: none;
+  display: flex;
   flex-direction: column;
   //Þyrfti að vera display:none til að filtera út en náðum ekki klára kóðann innan tíma.
 }

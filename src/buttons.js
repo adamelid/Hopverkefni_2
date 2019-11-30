@@ -1,44 +1,24 @@
-//Reyndum að tengja kóðann okkar við svipað dæmi á netinu.
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("box");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+function html(){
+  var x = document.getElementsByClassName("box-html");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }else {
+    x.style.display = "none";
   }
 }
-
-function AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
+function css(){
+  var x = document.getElementsByClassName("box-css");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }else {
+    x.style.display = "none";
   }
 }
-
-function RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
+function java(){
+  var x = document.getElementsByClassName("box-java");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  }else {
+    x.style.display = "none";
   }
-  element.className = arr1.join(" ");
-}
-
-var btnContainer = document.getElementById("buttons");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
 }
