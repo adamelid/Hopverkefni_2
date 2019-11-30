@@ -61,7 +61,8 @@ img { /* stylelint-disable-line */
 }
 .flokkur{
   background-color: $yellow-color;
-  height: 300px;
+  height: 200px;
+  max-height: 200px;
   padding: 10px;
 }
 .tegund:hover{
@@ -81,6 +82,7 @@ img { /* stylelint-disable-line */
 .tegund{
   background-color: $grey-color;
   height: 150px;
+  max-height: 150px;
   padding: 10px;
 }
 #buttons{
@@ -120,4 +122,12 @@ a {
   display: block;
 }
 
-// TODO import
+#htmlButton{
+  background-color: $blue-color;
+}
+#cssButton{
+  background-color: $blue-color;
+}
+#javaButton{
+  background-color: $blue-color;
+}
