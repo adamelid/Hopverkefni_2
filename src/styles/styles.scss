@@ -57,6 +57,7 @@ img { /* stylelint-disable-line */
   height: 300px;
   display: none;
   flex-direction: column;
+  //Þyrfti að vera display:none til að filtera út en náðum ekki klára kóðann innan tíma.
 }
 .flokkur{
   background-color: $yellow-color;
@@ -82,7 +83,7 @@ img { /* stylelint-disable-line */
   height: 150px;
   padding: 10px;
 }
-.buttons{
+#buttons{
   text-align: center;
   margin-bottom: 20px;
 }
@@ -107,8 +108,8 @@ header{
   text-align: center;
   padding-top: 65px;
 }
-button:active {
-  background-color: $pink-color;
+.btn.active {
+  background-color:$pink-color;
   color: $black-color;
 }
 a {
